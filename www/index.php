@@ -63,7 +63,7 @@
                           <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp5.png'">
                                 Bedroom: <br>
                                 <?php
-                                  $rawtemp = exec('/home/jon/temps/gettemp.sh underfloor');
+                                  $rawtemp = exec('/home/jon/temps/gettemp.sh bedroom');
                                   $temp = ($rawtemp / 1000);
                                   $finaltemp = number_format((float)$temp, 1, '.', '');
 
