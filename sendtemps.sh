@@ -9,7 +9,7 @@ then
 	dining=28-0317322bcaff
 	heating=28-031731d6a6ff
 	lounge=28-041731d205ff
-	underfloor=28-031731e47dff
+	bedroom=28-031731e47dff
 
 
 	function getTemp {
@@ -26,7 +26,7 @@ then
 
 
 		getTemp $outside outside
-		getTemp $dining diningroom
-		getTemp $lounge lounge
+		#getTemp $dining diningroom
+		#getTemp $lounge lounge
 		getTemp $heating heating
-		getTemp $underfloor underfloor
+		getTemp $bedroom bedroom
