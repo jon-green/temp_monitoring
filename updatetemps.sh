@@ -14,9 +14,9 @@ diningreal=NaN
 heatingraw=`cat /tmp/rawtemps | grep heating | awk {'print $2'}`
 heatingreal=`echo "scale=1; $heatingraw / 1000" | bc`
 
-#loungeraw=`cat /tmp/rawtemps | grep lounge | awk {'print $2'}`
-#loungereal=`echo "scale=1; $loungeraw / 1000" | bc`
-loungereal=NaN
+hallwayraw=`cat /tmp/rawtemps | grep hallway | awk {'print $2'}`
+hallwayreal=`echo "scale=1; $hallwayraw / 1000" | bc`
+#hallwayreal=NaN
 
 bedroomraw=`cat /tmp/rawtemps | grep bedroom | awk {'print $2'}`
 bedroomreal=`echo "scale=1; $bedroomraw / 1000" | bc`
@@ -25,7 +25,7 @@ bedroomreal=`echo "scale=1; $bedroomraw / 1000" | bc`
 echo $outsidereal
 echo $diningreal
 echo $heatingreal
-echo $loungereal
+echo $hallwayreal
 echo $bedroomreal
 
-/usr/bin/rrdtool update /home/jon/temps/temps.rrd N:$outsidereal:$diningreal:$heatingreal:$loungereal:$bedroomreal
+/usr/bin/rrdtool update /home/jon/temps/temps.rrd N:$outsidereal:$diningreal:$heatingreal:$hallwayreal:$bedroomreal
