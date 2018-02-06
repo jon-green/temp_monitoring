@@ -35,7 +35,7 @@ GPRINT:temp3:MAX:"Max\:%8.2lf" \
 GPRINT:temp3:LAST:"Current\:%8.2lf \n" $commonopts
 
 /usr/bin/rrdtool graph /home/jon/temps/graphs/temp4.png \
-DEF:temp4=/home/jon/temps/temps.rrd:temp4:AVERAGE LINE2:temp4#CC2529:"Lounge" \
+DEF:temp4=/home/jon/temps/temps.rrd:temp4:AVERAGE LINE2:temp4#CC2529:"Hallway" \
 GPRINT:temp4:MIN:"     Min\:%8.2lf" \
 GPRINT:temp4:MAX:"Max\:%8.2lf" \
 GPRINT:temp4:LAST:"Current\:%8.2lf \n" $commonopts
@@ -70,7 +70,7 @@ DEF:temp2=/home/jon/temps/temps.rrd:temp2:AVERAGE LINE2:temp2#DA7C30:"Dining Roo
 GPRINT:temp2:MIN:"Min\:%8.2lf" \
 GPRINT:temp2:MAX:"Max\:%8.2lf" \
 GPRINT:temp2:LAST:"Current\:%8.2lf \n" \
-DEF:temp4=/home/jon/temps/temps.rrd:temp4:AVERAGE LINE2:temp4#CC2529:"Lounge" \
+DEF:temp4=/home/jon/temps/temps.rrd:temp4:AVERAGE LINE2:temp4#CC2529:"Hallway" \
 GPRINT:temp4:MIN:"     Min\:%8.2lf" \
 GPRINT:temp4:MAX:"Max\:%8.2lf" \
 GPRINT:temp4:LAST:"Current\:%8.2lf \n" \
@@ -90,7 +90,7 @@ DEF:temp2=/home/jon/temps/temps.rrd:temp2:AVERAGE LINE2:temp2#DA7C30:"Dining Roo
 GPRINT:temp2:MIN:"Min\:%8.2lf" \
 GPRINT:temp2:MAX:"Max\:%8.2lf" \
 GPRINT:temp2:LAST:"Current\:%8.2lf \n" \
-DEF:temp4=/home/jon/temps/temps.rrd:temp4:AVERAGE LINE2:temp4#CC2529:"Lounge" \
+DEF:temp4=/home/jon/temps/temps.rrd:temp4:AVERAGE LINE2:temp4#CC2529:"Hallway" \
 GPRINT:temp4:MIN:"     Min\:%8.2lf" \
 GPRINT:temp4:MAX:"Max\:%8.2lf" \
 GPRINT:temp4:LAST:"Current\:%8.2lf \n" \
