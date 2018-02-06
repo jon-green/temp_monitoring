@@ -44,11 +44,12 @@
                           </div>
 
 <br>
+-->
 
-<!--                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp4.png'">
-                                Lounge: <br>
+                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp4.png'">
+                                Hallway: <br>
                                 <?php
-                                  $rawtemp = exec('/home/jon/temps/gettemp.sh lounge');
+                                  $rawtemp = exec('/home/jon/temps/gettemp.sh hallway');
                                   $temp = ($rawtemp / 1000);
                                   $finaltemp = number_format((float)$temp, 1, '.', '');
 
@@ -59,7 +60,6 @@
                           </div>
 
 <br>
--->
                           <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp5.png'">
                                 Bedroom: <br>
                                 <?php
