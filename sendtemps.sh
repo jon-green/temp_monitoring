@@ -8,7 +8,7 @@ then
 	outside=28-0317318552ff
 	dining=28-0317322bcaff
 	heating=28-031731d6a6ff
-	lounge=28-041731d205ff
+	hallway=28-041731d205ff
 	bedroom=28-031731e47dff
 
 
@@ -27,6 +27,6 @@ then
 
 		getTemp $outside outside
 		#getTemp $dining diningroom
-		#getTemp $lounge lounge
+		getTemp $hallway hallway
 		getTemp $heating heating
 		getTemp $bedroom bedroom
