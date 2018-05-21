@@ -15,10 +15,10 @@
   
  <div class="col-md-4 text-center">  
 
-			  <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp1.png'">	  
+			  <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/outside.html'">	  
 				Outside: <br>	  
 				<?php
-				  $rawtemp = exec('/home/jon/temps/gettemp.sh outside');
+				  $rawtemp = exec('/home/jon/temp_monitoring/gettemp.sh outside');
 				  $temp = ($rawtemp / 1000);
 				  $finaltemp = number_format((float)$temp, 1, '.', '');
 				  
@@ -30,10 +30,10 @@
 
 <br>
 
-<!--                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp2.png'">
-                                Dining Room: <br>
+                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp2.png'">
+                                Shed: <br>
                                 <?php
-                                  $rawtemp = exec('/home/jon/temps/gettemp.sh dining');
+                                  $rawtemp = exec('/home/jon/temp_monitoring/gettemp.sh shed');
                                   $temp = ($rawtemp / 1000);
                                   $finaltemp = number_format((float)$temp, 1, '.', '');
 
@@ -44,12 +44,11 @@
                           </div>
 
 <br>
--->
 
-                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp4.png'">
+                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/hallway.html'">
                                 Hallway: <br>
                                 <?php
-                                  $rawtemp = exec('/home/jon/temps/gettemp.sh hallway');
+                                  $rawtemp = exec('/home/jon/temp_monitoring/gettemp.sh hallway');
                                   $temp = ($rawtemp / 1000);
                                   $finaltemp = number_format((float)$temp, 1, '.', '');
 
@@ -60,10 +59,10 @@
                           </div>
 
 <br>
-                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp5.png'">
+                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/bedroom.html'">
                                 Bedroom: <br>
                                 <?php
-                                  $rawtemp = exec('/home/jon/temps/gettemp.sh bedroom');
+                                  $rawtemp = exec('/home/jon/temp_monitoring/gettemp.sh bedroom');
                                   $temp = ($rawtemp / 1000);
                                   $finaltemp = number_format((float)$temp, 1, '.', '');
 
@@ -74,10 +73,10 @@
                           </div>
 <br>
 
-                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp3.png'">
+                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/heating.html'">
                                 Heating: <br>
                                 <?php
-                                  $rawtemp = exec('/home/jon/temps/gettemp.sh heating');
+                                  $rawtemp = exec('/home/jon/temp_monitoring/gettemp.sh heating');
                                   $temp = ($rawtemp / 1000);
                                   $finaltemp = number_format((float)$temp, 1, '.', '');
 
