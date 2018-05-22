@@ -87,7 +87,6 @@
                           </div>
 <div>
 
-<br><a href=/temps/graphs/all1.png>Combined graph</a>
 <br>Last updated: <?php
 $filename = '/tmp/rawtemps'; 
     echo date ("F d Y H:i", filemtime($filename));
