@@ -30,7 +30,7 @@
 
 <br>
 
-                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/temp2.png'">
+                          <div><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/temps/graphs/shed.html'">
                                 Shed: <br>
                                 <?php
                                   $rawtemp = exec('/home/jon/temp_monitoring/gettemp.sh shed');
